@@ -2,113 +2,94 @@ import { Table } from 'antd';
 
 function User() {
   type UserType = {
-    id: number;
-    name: string;
-    age: number;
-    add: string;
-    gander: string;
-    group:string;
+    chemicalClass: string;
+    therapeuticClass: string;
+    actionClass: string;
+    hsnCode: number;
+    habitForming: string;
   };
 
   const userList: UserType[] = [
     {
-      id: 1,
-      name: 'Thunder Clint',
-      age: 24,
-      add: 'Thunder Clint, Washington America, 1053220',
-      gander: 'Male',
-      group:"A"
+        chemicalClass: "Fructose 500mg",
+        therapeuticClass: 'fructose 2nd 500mg',
+        actionClass: "deliver",
+        hsnCode: 547938,
+        habitForming: 'Dogase',
     },
     {
-      id: 2,
-      name: 'Thunder Josh',
-      age: 23,
-      add: 'Thunder Clint, Washington America, 1053220',
-      gander: 'Male',
-       group:"B-"
+        chemicalClass: "Fructose 500mg",
+        therapeuticClass: 'fructose 2nd 500mg',
+        actionClass: "deliver",
+        hsnCode: 547938,
+        habitForming: 'Dogase',
     },
     {
-      id: 3,
-      name: 'Dragon Roy',
-      age: 25,
-      add: 'Thunder Clint, Washington America , 1053220',
-      gander: 'Male',
-       group:"A+"
+        chemicalClass: "Fructose 500mg",
+        therapeuticClass: 'fructose 2nd 500mg',
+        actionClass: "deliver",
+        hsnCode: 547938,
+        habitForming: 'Dogase',
     },
     {
-      id: 4,
-      name: 'Ella Walia',
-      age: 45,
-      add: 'Thunder Clint, Washington America, 1053220',
-      gander: 'Female',
-       group:"O"
+        chemicalClass: "Fructose 500mg",
+        therapeuticClass: 'fructose 2nd 500mg',
+        actionClass: "deliver",
+        hsnCode: 547938,
+        habitForming: 'Dogase',
     },
     {
-      id: 5,
-      name: 'Sower Clint',
-      age: 34,
-      add: 'Thunder Clint, Washington America, 1053220',
-      gander: 'Male',
-       group:"A-"    
+        chemicalClass: "Fructose 500mg",
+        therapeuticClass: 'fructose 2nd 500mg',
+        actionClass: "deliver",
+        hsnCode: 547938,
+        habitForming: 'Dogase',
     },
     {
-      id: 6,
-      name: 'Sower Clint',
-      age: 34,
-      add: 'Thunder Clint, Washington America, 1053220',
-      gander: 'Male',
-       group:"A-"    
+        chemicalClass: "Fructose 500mg",
+        therapeuticClass: 'fructose 2nd 500mg',
+        actionClass: "deliver",
+        hsnCode: 547938,
+        habitForming: 'Dogase',
     },
     {
-      id: 7,
-      name: 'Sower Clint',
-      age: 34,
-      add: 'Thunder Clint, Washington America, 1053220',
-      gander: 'Male',
-       group:"A-"    
+        chemicalClass: "Fructose 500mg",
+        therapeuticClass: 'fructose 2nd 500mg',
+        actionClass: "deliver",
+        hsnCode: 547938,
+        habitForming: 'Dogase',
     },
-    {
-      id: 8,
-      name: 'Sower Clint',
-      age: 34,
-      add: 'Thunder Clint, Washington America, 1053220',
-      gander: 'Male',
-       group:"A-"    
-    },
+   
     
   ];
 
   const columns = [
     {
-      title: 'ID',
-      dataIndex: 'id',
-      key: 'id',
+      title: 'ChemicalClass',
+      dataIndex: 'chemicalClass',
+      key: 'chemicalClass',
     },
     {
-      title: 'Name',
-      dataIndex: 'name',
-      key: 'name',
+      title: 'TherapeuticClass',
+      dataIndex: 'therapeuticClass',
+      key: 'therapeuticClass',
     },
     {
-      title: 'Age',
-      dataIndex: 'age',
-      key: 'age',
+      title: 'HctionClass',
+      dataIndex: 'actionClass',
+      key: 'actionClass',
     },
     {
-      title: 'Address',
-      dataIndex: 'add',
-      key: 'add',
+      title: 'HsnCode',
+      dataIndex: 'hsnCode',
+      key: 'hsnCode',
     },
     {
-      title: 'Gender',
-      dataIndex: 'gander',
-      key: 'gander',
+      title: 'HabitForming',
+      dataIndex: 'habitForming',
+      key: 'habitForming',
     },
-    {
-      title: 'Group',
-      dataIndex: 'group',
-      key: 'group',
-    },
+   
   ];
 
   return (
