@@ -4,6 +4,7 @@ import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 import Myform from './components/myform';
 import Mycard from './components/Mycard';
+import User from './components/user';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -19,7 +20,7 @@ const items: MenuItem[] = [
         children: [
           { key: '1', label: 'Form' },
           { key: '2', label: 'Card' },
-          { key: '3', label: 'Sidebar 3' },
+          { key: '3', label: 'User Data' },
           // ...more items if needed
         ],
       },
@@ -50,6 +51,7 @@ const Mylibs1: React.FC = () => {
       <div style={{ flex: 1, padding: '10px' }}>
         {selectedKey === '1' && <Myform />}
         {selectedKey === '2' && <Mycard />}
+        {selectedKey === '3' && <User />}
       </div>
     </div>
   );
